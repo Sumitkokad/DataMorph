@@ -1,0 +1,330 @@
+/* src/components/Register.css */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-dark: #0b0c1a;
+  --text-light: #ffffff;
+  --text-muted: #b0b3c7;
+  --primary-color: #6a5bff;
+  --gradient-start: #6a5bff;
+  --gradient-end: #ff61c7;
+  --button-bg: #6a5bff;
+  --button-hover-bg: #5948e5;
+  --text-color: var(--text-light);
+  --text-secondary: var(--text-muted);
+  --secondary-color: #0d1117;
+  --card-bg: #111827;
+  --card-border: #1e2235;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.Register-app {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #0f1419 50%, var(--secondary-color) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.Register-app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 20% 50%, rgba(106, 91, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 97, 199, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(0, 229, 255, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.Register-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.Register-container {
+  background: rgba(17, 24, 39, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Register-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gradient-start), var(--gradient-end), transparent);
+}
+
+.Register-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.4);
+}
+
+.Register-description {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.Register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.Register-input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.Register-input-group:focus-within {
+  border-color: var(--primary-color);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(106, 91, 255, 0.1);
+}
+
+.Register-input-group svg {
+  color: var(--text-secondary);
+  margin-right: 0.75rem;
+  transition: color 0.3s ease;
+  width: 20px;
+  height: 20px;
+}
+
+.Register-input-group:focus-within svg {
+  color: var(--primary-color);
+}
+
+.Register-input-group input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.Register-input-group input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.Register-btn {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.Register-btn.primary {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: white;
+  border: none;
+}
+
+.Register-btn.primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.Register-btn.primary:hover::before {
+  left: 100%;
+}
+
+.Register-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(106, 91, 255, 0.4);
+}
+
+.Register-btn.outline {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.Register-btn.outline:hover {
+  background: rgba(106, 91, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(106, 91, 255, 0.2);
+}
+
+.Register-help {
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  color: var(--text-secondary);
+}
+
+.Register-help a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.Register-help a:hover {
+  color: var(--gradient-end);
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .Register-app {
+    padding: 1.5rem;
+  }
+
+  .Register-heading {
+    font-size: 2.5rem;
+  }
+
+  .Register-container {
+    padding: 2rem;
+    border-radius: 16px;
+  }
+
+  .Register-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Register-app {
+    padding: 1rem;
+  }
+
+  .Register-heading {
+    font-size: 2rem;
+  }
+
+  .Register-container {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .Register-description {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .Register-btn {
+    font-size: 0.9rem;
+    padding: 0.875rem 1.25rem;
+  }
+
+  .Register-input-group {
+    padding: 0.875rem;
+  }
+
+  .Register-input-group input {
+    font-size: 0.9rem;
+  }
+
+  .Register-help {
+    font-size: 0.8rem;
+    margin-top: 0.75rem;
+  }
+}
+
+/* High contrast support */
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: #0066ff;
+    --gradient-start: #0066ff;
+    --gradient-end: #ff00aa;
+  }
+
+  .Register-container {
+    border: 2px solid white;
+  }
+
+  .Register-help a {
+    text-decoration: underline;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .Register-btn.primary::before {
+    display: none;
+  }
+
+  .Register-container:hover {
+    transform: none;
+  }
+
+  .Register-btn:hover {
+    transform: none;
+  }
+}

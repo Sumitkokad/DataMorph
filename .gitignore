@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+.env/
+*.sqlite3
+
+# ML / Data
+*.csv
+*.parquet
+*.joblib
+*.pkl
+*.h5
+
+# Node / Frontend
+node_modules/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
