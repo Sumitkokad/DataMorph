@@ -1,7 +1,50 @@
-# 🚀 DataMorph
-### AI-Driven, Context-Aware Data Preprocessing Engine
+<div align="center">
 
-**DataMorph** is a production-grade, AI-assisted data preprocessing platform that **analyzes datasets like an experienced data scientist** — column by column, rule by rule — and prepares them safely for machine learning and analytics.
+<!-- ===================== HERO ===================== -->
+
+# 🧬 DataMorph
+### AI-Native • Context-Aware • Safe Data Preprocessing Engine
+
+<img src="https://img.shields.io/badge/Status-Active%20Development-8B5CF6?style=for-the-badge&labelColor=000000"/>
+<img src="https://img.shields.io/badge/AI-Mistral%207B-9333EA?style=for-the-badge&labelColor=000000"/>
+<img src="https://img.shields.io/badge/Backend-Flask-6366F1?style=for-the-badge&labelColor=000000"/>
+<img src="https://img.shields.io/badge/Python-3.10+-7C3AED?style=for-the-badge&labelColor=000000"/>
+
+<br/>
+
+> **DataMorph transforms raw, messy datasets into ML-ready intelligence —  
+with AI reasoning, rule enforcement, and zero data corruption.**
+
+<br/>
+
+<a href="#-features"><img src="https://img.shields.io/badge/Explore-Features-black?style=for-the-badge&logo=github"/></a>
+<a href="#-architecture"><img src="https://img.shields.io/badge/View-Architecture-black?style=for-the-badge&logo=github"/></a>
+<a href="#-use-cases"><img src="https://img.shields.io/badge/Use-Cases-black?style=for-the-badge&logo=github"/></a>
+
+</div>
+
+---
+
+## 🖤 What is DataMorph?
+
+```text
+┌────────────────────────────────────────────┐
+│ Traditional Preprocessing Pipelines        │
+│                                            │
+│ ❌ Blind rules                              │
+│ ❌ Hardcoded logic                          │
+│ ❌ Data loss risk                           │
+│ ❌ No reasoning or validation               │
+└────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────┐
+│ DataMorph (AI-Native)                      │
+│                                            │
+│ ✅ Column-level intelligence               │
+│ ✅ Context-aware decisions                 │
+│ ✅ Rule-based safety                       │
+│ ✅ Explainable AI reasoning                │
+└────────────────────────────────────────────┘
 
 It combines **deterministic rule-based validation** with **LLM-guided reasoning** to ensure preprocessing is:
 - ✅ Accurate
