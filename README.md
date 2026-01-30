@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![DataMorph Banner](https://via.placeholder.com/800x200/1a1a1a/8B5CF6?text=DataMorph+AI+Native+Preprocessing)
+
 
 > **Transform raw data into ML-ready intelligence with AI reasoning + rule-based safety**
 
@@ -12,7 +12,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-![Architecture](https://via.placeholder.com/800x400/0f172a/8B5CF6?text=AI+%2B+Rules+Architecture)
+
 
 </div>
 
