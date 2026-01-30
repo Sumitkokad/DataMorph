@@ -16,7 +16,7 @@
 
 ---
 
-## 🧠 What is DataMorph?
+##  What is DataMorph?
 
 **DataMorph** is a **production-grade, AI-guided data preprocessing engine** built to safely analyze, validate, and prepare real-world datasets for machine learning and analytics.
 
