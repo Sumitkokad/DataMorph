@@ -39,3 +39,6 @@ column_intent = {
     "review": "free_text",            # Text data
     "target": "label"                 # ML target (protected)
 }
+
+
+## Youtube Link - https://youtu.be/VdMC1zgyFrc
