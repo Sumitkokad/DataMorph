@@ -7,7 +7,7 @@
 ![divider](https://capsule-render.vercel.app/api?type=rect&color=0:0d0d0d,100:5b2cff&height=2)
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-0d0d0d?style=for-the-badge&logo=python&logoColor=white)](#)
-[![Django](https://img.shields.io/badge/backend-flask-5b2cff?style=for-the-badge&logo=flask&logoColor=white)](#)
+[![Django](https://img.shields.io/badge/backend-Django-5b2cff?style=for-the-badge&logo=Django&logoColor=white)](#)
 [![Mistral 7B](https://img.shields.io/badge/LLM-Mistral%207B-8a5cff?style=for-the-badge)](#)
 [![Local AI](https://img.shields.io/badge/Local-LLM%20Only-black?style=for-the-badge)](#)
 [![License MIT](https://img.shields.io/badge/license-MIT-1e1e1e?style=for-the-badge)](#)
